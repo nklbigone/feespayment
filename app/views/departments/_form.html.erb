@@ -1,0 +1,31 @@
+<%= form_with(model: department, local: true) do |form| %>
+  <% if department.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(department.errors.count, "error") %> prohibited this department from being saved:</h2>
+
+      <ul>
+        <% department.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :department_name %>
+    <%= form.text_field :department_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :depart_code %>
+    <%= form.text_field :depart_code %>
+  </div>
+
+  <div class="field">
+  <%= form.collection_select(:faculty_id, Faculty.all, :id, :faculty_name, {}, { :multiple =>false} ) %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Save', class: 'btn btn-info btn-sm' %>
+  </div>
+<% end %>

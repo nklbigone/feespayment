@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Faculty name:</strong>
+  <%= @faculty.faculty_name %>
+</p>
+
+<p>
+  <strong>Facult code:</strong>
+  <%= @faculty.facult_code %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @faculty.user.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_faculty_path(@faculty), class: 'btn btn-light' %>
+<%= link_to 'Back', faculties_path, class: 'btn btn-light' %>

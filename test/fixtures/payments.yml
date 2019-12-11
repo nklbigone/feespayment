@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Amount: MyString
+  acdemic_year: MyString
+  semester: MyString
+  payment_date: 2019-12-11
+  user: one
+
+two:
+  Amount: MyString
+  acdemic_year: MyString
+  semester: MyString
+  payment_date: 2019-12-11
+  user: two

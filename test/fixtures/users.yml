@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  gender: MyString
+  national_id: 1
+  address: MyString
+  facult_id: 1
+  level: MyString
+  classes: MyString
+  password: MyString
+  user_type: false
+  academic_year: 2019-12-11
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  gender: MyString
+  national_id: 1
+  address: MyString
+  facult_id: 1
+  level: MyString
+  classes: MyString
+  password: MyString
+  user_type: false
+  academic_year: 2019-12-11

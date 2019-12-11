@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @payment.Amount %>
+</p>
+
+<p>
+  <strong>Acdemic year:</strong>
+  <%= @payment.acdemic_year %>
+</p>
+
+<p>
+  <strong>Semester:</strong>
+  <%= @payment.semester %>
+</p>
+
+<p>
+  <strong>Payment date:</strong>
+  <%= @payment.payment_date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @payment.user.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment), class: 'btn btn-light' %>
+<%= link_to 'Back', payments_path, class: 'btn btn-light' %>
